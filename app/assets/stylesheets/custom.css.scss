@@ -1,0 +1,103 @@
+@import "bootstrap";
+
+$divideWhite: #FFFFED;
+$textGray: #E2E2E2;
+$easyYellow: #FFFF33;
+$darkYellow: #E8E000;
+$darkRed: #AC0000;
+
+@mixin box_sizing{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+/* Universal */
+
+html{
+
+	overflow-y: scroll;
+
+		.navbar{
+			background-color: $easyYellow;
+			}
+
+	body{
+		padding-top: 60px;
+		background-color: #000000;
+		color: white;
+	}
+
+	.hero-unit{
+		background-color: $darkRed;
+	}
+}
+
+section{
+	overflow: auto;
+}
+
+textarea{
+	resize: vertical;
+}
+
+
+
+/*typography*/
+h1{
+	text-align: center;
+}
+
+h5{
+	color: textGray;
+}
+
+/* header */
+
+#logo{
+	float: left;
+}
+
+/* footer */
+
+footer{
+	margin-top: 45px;
+	padding-top: 5px;
+	border-top: 1px solid $divideWhite;
+	color: $grayLight;
+
+	a{
+		color: #888888;
+
+		&:hover{
+			color: $textGray;
+			text-decoration: none;
+		}
+	}
+
+	small{
+		float: left;
+		font-size: 1.1em;
+	}
+
+	ul{
+		float: right;
+		list-style: none;
+
+		li{
+			float: left;
+			margin-left: 10px;
+		}
+	}
+}
+
+/*miscellaneous*/
+
+.debug_dump{
+	clear: both;
+	float: left;
+	width: 100%;
+	margin-top: 45px;
+	@include box_sizing;
+}
