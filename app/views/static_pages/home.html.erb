@@ -1,4 +1,25 @@
-<div class="center hero-unit">
-	<h1>Hillsborough High School Theatre</h1></br>
-	<center><%= image_tag("Home/THEATRE LOGO.jpg", alt: "Logo") %></center>
+<div class="row center">
+	<%= image_tag("Home/THEATRE_LOGO_medium.jpg", alt: "Logo") %>
+</div>
+<%= render 'hero' %>
+<div class="row">
+	<aside class="span2 center">
+		<section class="center">
+			<%= render 'tickets' %>
+		</section>
+		<section class="center">
+			<%= render 'social' %>
+		</section>
+	</aside>
+	<div class="span8 offset2 center" id="main_section">
+		<section id="ad">
+			<%= render 'advertise' %>
+		</section>
+		<section id="current">
+			<%= render 'current_season' %>
+		</section>
+		<section>
+			<%= render 'about' %>
+		</section>
+	</div>
 </div>

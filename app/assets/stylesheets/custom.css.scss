@@ -19,10 +19,6 @@ html{
 
 	overflow-y: scroll;
 
-		.navbar{
-			background-color: $easyYellow;
-			}
-
 	body{
 		padding-top: 60px;
 		background-color: #000000;
@@ -31,8 +27,39 @@ html{
 
 	.hero-unit{
 		background-color: $darkRed;
+
+		h1, h2{
+			color: $easyYellow;
+			text-align: center;
+		}
+
+		h1{
+			font-size: 2.7em;
+			margin-bottom: -30px;
+			letter-spacing: -1px;
+		}
+
+		h2{
+			font-weight: normal;
+			letter-spacing: normal;
+			font-size: 1.5em;
+			margin-bottom: 35px;
+		}
 	}
 }
+
+.btn:first-child{
+	background-image: linear-gradient(to bottom, $darkRed, #9B0000);
+	color: $easyYellow;
+	border-color: $darkRed;
+
+	&:hover, &:focus{
+		background-color: #9B0000;
+		color: $easyYellow;
+	}
+}
+
+
 
 section{
 	overflow: auto;
@@ -42,11 +69,72 @@ textarea{
 	resize: vertical;
 }
 
+.center{
+	text-align: center;
+	padding-bottom: 35px;
+	display: block;
+}
+
+.navbar{
+
+	.nav li.dropdown > .dropdown-toggle b.caret{
+		border-top-color: $easyYellow;
+		border-bottom-color: $easyYellow;
+	}
+
+	.nav li.dropdown > .dropdown-toggle:hover b.caret{
+		border-top-color: $easyYellow;
+		border-bottom-color: $easyYellow;
+	}
+
+	.navbar-inner{
+		background: $darkRed;
+		border-bottom: $darkRed;
+		font-color: $easyYellow;
+
+		.nav{
+			li{
+				a{
+					color: $easyYellow;	
+					text-shadow: none;
+					&:hover{
+						color: $easyYellow;	
+						text-decoration: underline;
+					}
+				}
+			}
+
+			.dropdown-menu{
+
+				background-color: $darkRed;
+
+				li{
+					a{
+						color: $easyYellow;
+						&:hover{
+							background-color: $easyYellow;
+							background-image: none;
+							color: $darkRed;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
 
 
 /*typography*/
+h1, h2, h3, h4, h5, h6{
+	line-height: 1;
+}
+
 h1{
-	text-align: center;
+	font-color: $easyYellow;
+	font-size: 2em;
 }
 
 h5{
@@ -100,4 +188,78 @@ footer{
 	width: 100%;
 	margin-top: 45px;
 	@include box_sizing;
+}
+
+.row{
+	padding-bottom: 50px;
+}
+
+aside{
+	
+	.row{
+		padding-bottom: 0px;
+	}
+	
+
+	text-align: center;
+
+	h3{
+		font-size: 1.2em;
+		letter-spacing: -5;
+	}
+
+	section{
+		padding-bottom: 30px;
+	}
+}
+
+/*Home Page*/
+
+#season_pics{
+	.span2{
+		height: 107px;
+	}
+}
+
+#ad_button_pad{
+	padding-bottom: 5px;
+}
+
+#ad{
+	overflow: visible;
+}
+
+#ad_button{
+	letter-spacing: 2px;
+	font-size: 30px;
+	line-height: 40px;
+
+	background-image: linear-gradient(to bottom, $darkYellow, #D7D000);
+	color: $darkRed;
+	border-color: $darkYellow;
+
+	&:hover, &:focus{
+		background-color: #D7D000;
+		color: $darkRed;
+	}
+}
+
+#advert{
+	h4{
+		padding-bottom: 35px;
+		letter-spacing: 2px;
+	}
+}
+
+#current{
+	padding-bottom: 60px;
+}
+
+#vid{
+	padding-top: 30px;
+}
+
+#learn{
+	float: none;
+	padding-bottom: 5px;
 }
