@@ -52,6 +52,7 @@ html{
 	background-image: linear-gradient(to bottom, $darkRed, #9B0000);
 	color: $easyYellow;
 	border-color: $darkRed;
+	background-color: $darkRed;
 
 	&:hover, &:focus{
 		background-color: #9B0000;
@@ -91,6 +92,7 @@ textarea{
 		background: $darkRed;
 		border-bottom: $darkRed;
 		font-color: $easyYellow;
+		background-color: $darkRed;
 
 		.nav{
 			li{
@@ -237,6 +239,7 @@ aside{
 	background-image: linear-gradient(to bottom, $darkYellow, #D7D000);
 	color: $darkRed;
 	border-color: $darkYellow;
+	background-color: $darkYellow;
 
 	&:hover, &:focus{
 		background-color: #D7D000;
