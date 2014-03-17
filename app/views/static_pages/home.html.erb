@@ -1,7 +1,9 @@
 <div class="row center">
 	<%= image_tag("Home/THEATRE_LOGO_medium.jpg", alt: "Logo") %>
 </div>
-<%= render 'hero' %>
+<% if !signed_in? %>
+	<%= render 'hero' %>
+<% end %>
 <div class="row">
 	<aside class="span2 center">
 		<section class="center">
